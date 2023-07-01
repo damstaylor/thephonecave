@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-//import {Galaxy_S7} from "../../backend/images/Galaxy_S7";
 import PhoneList from './components/PhoneList/PhoneList';
 import PhoneDetails from './components/PhoneDetails/PhoneDetails';
 

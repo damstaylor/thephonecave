@@ -1,0 +1,32 @@
+.phone-details {
+    margin: 20px;
+  }
+  
+  .phone-details h2 {
+    margin: 0;
+  }
+  
+  .phone-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .phone-details-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-details-item strong {
+    margin-right: 5px;
+  }
+  
+  .phone-details-item span {
+    font-weight: bold;
+  }
+  
+  .phone-details p {
+    margin: 10px 0;
+  }
+  
