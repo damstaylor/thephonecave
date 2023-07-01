@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const phones = require('../data/phones.json');
+
+// Enable CORS for all routes in Express app (Access-Control-Allow-Origin header added in the response)
+app.use(cors());
 
 app.get('/phones', (req, res) => {
   res.json(phones);
