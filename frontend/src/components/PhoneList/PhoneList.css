@@ -17,14 +17,13 @@
   .phone-list li {
     cursor: pointer;
     padding: 10px;
-    background-color: #f5f5f5;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
   }
   
   .phone-list li:hover {
-    background-color: #eaeaea;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   }
   
   .phone-item {
