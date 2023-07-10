@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
 import Spinner from '../Spinner/Spinner';
 import './PhoneList.css';
+import { getPhones } from '../../services/phones';
 
 const PhoneList = ({ onSelectPhone }) => {
   const [phones, setPhones] = useState([]);
@@ -11,7 +11,7 @@ const PhoneList = ({ onSelectPhone }) => {
   useEffect(() => {
     const fetchPhones = async () => {
       try {
-        const response = await axios.get('/phones');
+        const response = await getPhones();
         setPhones(response.data);
         setLoading(false);
       } catch (error) {
