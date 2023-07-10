@@ -33,7 +33,7 @@ const PhoneList = ({ onSelectPhone }) => {
           {phones.map(phone => (
             <li key={phone.id} onClick={() => onSelectPhone(phone)}>
               <div className="phone-item">
-                <img src={phone.imageFileName} alt={phone.name} />
+                <img src={phone.imageURL} alt={phone.name} />
                 <div className="phone-details">
                   <h3>{phone.name}</h3>
                   <p>Manufacturer: {phone.manufacturer}</p>
