@@ -1,9 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const PORT = 3001;
-const BASE_URL = "http://localhost:" + PORT;
 const phones = require('../data/phones.json');
 const images = express.static('images');
 
@@ -43,6 +42,6 @@ app.get('/phones/:id', (req, res) => {
 });
 // ----------
 
-app.listen(PORT, () => {
-  console.log(`Server is running on ${BASE_URL}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on ${process.env.BACKEND_URL}`);
 });
